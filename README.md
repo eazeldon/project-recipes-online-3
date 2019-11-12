@@ -65,3 +65,6 @@ I asked the tutor tab, my mentor and some friends in the programming industry fo
 I tried the advice I received from to fix the filepath, I deleted the css and redid the css
 and change it to css .my_class color: white; it works, but when I tried to change the other colors, its not working. 
 Therefore, I put it back to white.
+
+## Code
+My code inspire from practical python and data centric development.
