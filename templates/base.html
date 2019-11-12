@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipes-online-cookbook-project-3</title>
+    
+  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+
+</head>
+<body>
+<header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="{{url_for('get_tasks')}}" class="brand-logo">Sugar Factory</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                     
+                    <li><a href="{{url_for('get_tasks')}}">Home</a></li>
+                      <li><a href="{{url_for('recipes')}}">Recipes</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                     <li><a href="{{url_for('products')}}">Products</a></li>
+                     <li><a href="{{url_for('statistic')}}">Statistic</a></li>
+                     <li><a href="{{url_for('get_categories')}}">Post</a></li>
+                
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+   
+                     
+                     <li><a href="{{url_for('home')}}">Home</a></li>
+                      <li><a href="{{url_for('recipes')}}">Recipes</a></li>
+                     <li><a href="{{url_for('contact')}}">Contact</a></li>
+                     <li><a href="{{url_for('products')}}">Products</a></li>
+                      <li><a href="{{url_for('statistic')}}">Statistic</a></li>
+                     <li><a href="{{url_for('get_categories')}}">Post</a></li>
+                
+                </ul>
+            </div>
+        </nav>
+    
+    <div class="row">
+    <div class="col s12" style="background-image: url('https://www.bakedblooms.com/wp-content/uploads/2018/09/7F10A2AD-087F-4D1A-B7CD-E37C59668E2B-1200x550.jpeg')">
+    
+    <div class="opaque-overlay">&nbsp;</div>   
+   
+      
+      <div class="row">
+        <div class="col s12">
+          <div class="my_class center-align">
+            
+           <h1>Sugar Factory from the maker</h1> 
+    
+           <div class="my_class center-align"><h3>of recipes online</h3></span>
+             </div>
+           </div>
+        </div>
+        </div>
+      </div>
+    </div>
+   
+    
+    
+    
+    
+    
+    
+    </header>
+    
+    
+    
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $(".button-collapse").sideNav();
+        })
+    </script>
+
+
+
+</body>
+</html>
