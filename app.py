@@ -99,14 +99,14 @@ def update_recipies(recipies_id):
 
 @app.route('/insert_recipies', methods=['POST'])
 def insert_recipies():
-    recipies_doc = {'recipies_name': request.form.get('recipies_name')})
+    recipies_doc = {'recipies_name': request.form.get('recipies_name')}
     mongo.db.recipes.insert_one(recipies_doc)
     return redirect(url_for('recipes'))                   
 
 
 @app.route('/insert_category', methods=['POST'])
 def insert_category():
-    category_doc = {'category_name': request.form.get('category_name')})
+    category_doc = {'category_name': request.form.get('category_name')}
     mongo.db.categories.insert_one(category_doc)
     return redirect(url_for('get_categories'))
 
