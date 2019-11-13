@@ -85,3 +85,4 @@ Note, in Heroku in Step 3 I used: git  commit  -m "Initial commit" and a command
 Technical issue with the deployment - I did not manage to deploy my changes and the tutor tab was not able to find a solution/reason to the issue.
 The commands that didn't work were: git pull and git pull --allow-unrelated-histories.
 But I managed to make the necessary changes to the code directly in GitHub to add my changes.
+Please note there were no issues push to Heroku.
