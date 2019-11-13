@@ -57,7 +57,12 @@ Testing result revealed that the site is not perfect on all screens but that was
 The site layout was designed with the intent to be as good as possible on mobile screens, followed by iPad and desktop viewing as the lowest priority.
 
 ##  Deployment
-I used Heroku to deploy my  project. I use git init, git add . , git  commit  -m”Finished my project part 3” and a command git push. 
+I used Heroku and Github to deploy my  project using the following 3 steps. 
+Step 1: I use git init, 
+Step 2: git add . , 
+Step 3: git  commit  -m”Finished my project 3” and a command git push. 
+Note, in Heroku in Step 3 I used: git  commit  -m "Initial commit" and a command git push
+
 
 ## Technical difficulties with css
 Can't get the css to work properly, my coulors are not working.
