@@ -84,7 +84,7 @@ def update_category(category_id):
      mongo.db.categories.update(
         {'_id': ObjectId(category_id)},
         {'category_name': request.form.get('category_name')})
-    return redirect(url_for('get_categories'))
+     return redirect(url_for('get_categories'))
 
 
 
@@ -93,31 +93,31 @@ def update_recipies(recipies_id):
      mongo.db.recipes.update(
         {'_id': ObjectId(recipies_id)},
         {'recipies_name': request.form.get('recipies_name')})
-    return redirect(url_for('recipes'))
+     return redirect(url_for('recipes'))
 
 
 @app.route('/insert_recipies', methods=['POST'])
 def insert_recipies():
-    recipies_doc = {'recipies_name': request.form.get('recipies_name')}
-    mongo.db.recipes.insert_one(recipies_doc)
-    return redirect(url_for('recipes'))                   
+     recipies_doc = {'recipies_name': request.form.get('recipies_name')}
+     mongo.db.recipes.insert_one(recipies_doc)
+     return redirect(url_for('recipes'))                   
 
 @app.route('/insert_category', methods=['POST'])
 def insert_category():
-    category_doc = {'category_name': request.form.get('category_name')}
-    mongo.db.categories.insert_one(category_doc)
-    return redirect(url_for('get_categories'))
+     category_doc = {'category_name': request.form.get('category_name')}
+     mongo.db.categories.insert_one(category_doc)
+     return redirect(url_for('get_categories'))
 
 
 @app.route('/add_category')
 def add_category():
-    return render_template('addcategory.html')
+     return render_template('addcategory.html')
  
 
                            
 @app.route('/add_recipies')
 def add_recipies():
-    return render_template('addrecipies.html')
+     return render_template('addrecipies.html')
 
 
 
