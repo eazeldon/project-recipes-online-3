@@ -82,19 +82,19 @@ def edit_recipies(recipies_id):
 
 @app.route('/update_category/<category_id>', methods=['POST'])
 def update_category(category_id):
-    mongo.db.categories.update(
-        {'_id': ObjectId(category_id)},
-        {'category_name': request.form.get('category_name')})
-    return redirect(url_for('get_categories'))
+   mongo.db.categories.update(
+       {'_id': ObjectId(category_id)},
+       {'category_name': request.form.get('category_name')})
+   return redirect(url_for('get_categories'))
 
 
 
 @app.route('/update_recipies/<recipies_id>', methods=['POST'])
 def update_recipies(recipies_id):
-    mongo.db.recipes.update(
-        {'_id': ObjectId(recipies_id)},
-        {'recipies_name': request.form.get('recipies_name')})
-    return redirect(url_for('recipes'))
+   mongo.db.recipes.update(
+       {'_id': ObjectId(recipies_id)},
+       {'recipies_name': request.form.get('recipies_name')})
+   return redirect(url_for('recipes'))
 
 
 @app.route('/insert_recipies', methods=['POST'])
