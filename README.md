@@ -81,7 +81,7 @@ I used Heroku and Github to deploy my  project using the following 3 steps.
 Step 1: I use git init, 
 Step 2: git add . , 
 Step 3: git  commit  -m”Finished my project 3” and a command git push origin master. 
-Note, in Heroku in Step 3 I used: git  commit  -m "Initial commit" and a command git push orgin master.
+Note, in Heroku in Step 3 I used: git  commit  -m "Initial commit" and a command git push origin master.
 Technical issue with the deployment - I did not manage to deploy my changes and the tutor tab was not able to find a solution/reason to the issue.
 The commands that didn't work were: git pull and git pull --allow-unrelated-histories.
-But I managed to edit directly in GitHub to add my changes.
+But I managed to make the necessary changes to the code directly in GitHub to add my changes.
