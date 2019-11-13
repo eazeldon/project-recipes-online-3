@@ -57,14 +57,14 @@ def get_categories():
 
 @app.route('/delete_recipies/<recipies_id>')
 def delete_recipies(recipies_id):
-   mongo.db.recipes.remove({'_id': ObjectId(recipies_id)})
-   return redirect(url_for('recipes')
+    mongo.db.recipes.remove({'_id': ObjectId(recipies_id)})
+    return redirect(url_for('recipes'))
 
  
 @app.route('/delete_category/<category_id>')
 def delete_category(category_id):
-   mongo.db.categories.remove({'_id': ObjectId(category_id)})
-   return redirect(url_for('get_categories'))
+    mongo.db.categories.remove({'_id': ObjectId(category_id)})
+    return redirect(url_for('get_categories'))
 
 
 @app.route('/edit_category/<category_id>')
