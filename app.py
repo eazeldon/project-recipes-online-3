@@ -116,7 +116,6 @@ def add_category():
  
 
                            
-                           
 @app.route('/add_recipies')
 def add_recipies():
     return render_template('addrecipies.html')
