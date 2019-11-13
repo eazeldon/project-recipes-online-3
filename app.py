@@ -60,8 +60,7 @@ def delete_recipies(recipies_id):
    mongo.db.recipes.remove({'_id': ObjectId(recipies_id)})
    return redirect(url_for('recipes')
 
-                   
-                   
+ 
 @app.route('/delete_category/<category_id>')
 def delete_category(category_id):
    mongo.db.categories.remove({'_id': ObjectId(category_id)})
